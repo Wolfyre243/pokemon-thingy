@@ -2,7 +2,7 @@
     "compilerOptions": {
         "lib": ["DOM", "DOM.Iterable", "ES2023"],
         "types": ["@remix-run/node", "vite/client"],
-        "target": "ES2023",
+        "target": "ES6",
         "allowJs": true,
         "skipLibCheck": true,
         "strict": true,
@@ -15,6 +15,7 @@
         "jsx": "react-jsx",
         "incremental": true,
         "allowImportingTsExtensions": true,
+        "allowSyntheticDefaultImports": true,
         "paths": {
             "@/*": ["./*"],
         },
