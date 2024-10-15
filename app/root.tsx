@@ -10,7 +10,7 @@ export const links: LinksFunction = () => [
 
 // Import components
 import NavBar from "./ui/navBar";
-  
+
 export default function App() {
     return (
         <html>
@@ -18,7 +18,7 @@ export default function App() {
             <Meta />
             <Links />
         </head>
-        <body className="bg-stone-950 font-outfit flex flex-col h-screen">
+        <body className="bg-stone-950 text-stone-300 overflow-hidden font-outfit flex flex-col h-screen">
             <NavBar />
             
             <Outlet />

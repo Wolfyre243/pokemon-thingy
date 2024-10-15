@@ -1,6 +1,6 @@
 // This is the index file of the root route, also known as the homepage.
 
-import { GithubIcon, FolderIcon } from "../ui/svg_icons";
+import { GithubIcon, HomeIcon } from "../ui/svg_icons";
 
 import PillButtonLink from "../ui/pillButtonLink";
 
@@ -21,12 +21,12 @@ export default function Home() {
                     <FolderIcon width={25} height={25} stroke="#ffffff" />
                     <p className="text-lg">Home</p>
                 </a> */}
-                <PillButtonLink href="https://github.com/Wolfyre243/Project-Francium">
+                <PillButtonLink href="https://github.com/Wolfyre243/pokemon-thingy">
                     <GithubIcon width={30} height={30} fill="#ffffff" />
                     <p className="text-lg">Github</p>
                 </PillButtonLink>
                 <PillButtonLink href="/home">
-                    <FolderIcon width={25} height={25} stroke="#ffffff" />
+                    <HomeIcon width={25} height={25} fill="#ffffff" />
                     <p className="text-lg">Home</p>
                 </PillButtonLink>
             </div>

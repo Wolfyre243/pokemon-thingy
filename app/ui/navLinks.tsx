@@ -11,7 +11,7 @@ const links = [
       icon: HomeIcon,
     },
     { name: 'Players', href: '/players', icon: HomeIcon },
-    { name: 'New & Updates', href: '/dashboard/trash', icon: HomeIcon },
+    { name: 'New & Updates', href: '/news', icon: HomeIcon },
 ];
 
 export default function NavLinks() {
