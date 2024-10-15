@@ -1,0 +1,37 @@
+{
+  "name": "pokemon-thingy",
+  "version": "1.0.0",
+  "description": "This is something I made on impulse.\r I have no recollection of how this started.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production npx tsx ./server.ts",
+    "dev": "npx tsx ./server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@remix-run/express": "^2.13.1",
+    "@remix-run/node": "^2.13.1",
+    "@remix-run/react": "^2.13.1",
+    "@remix-run/serve": "^2.13.1",
+    "@types/express": "^5.0.0",
+    "@types/react": "^18.3.11",
+    "clsx": "^2.1.1",
+    "cross-env": "^7.0.3",
+    "express": "^4.21.1",
+    "isbot": "^4.4.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.4",
+    "tsx": "^4.19.1"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^2.13.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
+    "vite": "^5.4.9"
+  }
+}
