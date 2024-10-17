@@ -6,7 +6,7 @@ import PillButtonLink from "../ui/pillButtonLink";
 
 export default function Home() {
     return (
-        <div className="h-full w-full flex flex-col justify-center items-center text-center text-white">
+        <div className="m-auto w-full flex flex-col justify-center items-center text-center text-white">
             <div className="mb-5 w-fit">
                 <h1 className="text-6xl">Help I Do Not Know What To Do With This</h1>
                 <p className="mt-4 text-lg">What am I even doing with my life</p>

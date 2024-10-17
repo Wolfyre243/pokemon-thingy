@@ -1,7 +1,9 @@
 // This is a reusable script to seed the database with rows.
 import { pool, getClient } from './database';
 
-const registerPokemon = async (dex_id: number, name: string, types: Array<any>) => {
+import { sentenceCase } from "sentence-case";
+
+const registerPokemon = async (dex_id: number, name: string, types: Array<any>, spriteURL: string) => {
     // Get types first
     const type1 = types[0].type.name;
     let type2;
@@ -11,8 +13,8 @@ const registerPokemon = async (dex_id: number, name: string, types: Array<any>) 
 
     const client = await getClient();
     await client.query(
-        `INSERT INTO pokedex (dex_id, name, type1, type2)
-        VALUES (${dex_id}, '${name}', '${type1}', '${type2 ? type2 : null}')`
+        `INSERT INTO pokedex (dex_id, name, type1, type2, spriteurl)
+        VALUES (${dex_id}, '${sentenceCase(name)}', '${sentenceCase(type1)}', '${type2 ? sentenceCase(type2) : null}', '${spriteURL}')`
     );
 
     await client.release();
@@ -41,7 +43,7 @@ export const addPokemon = async (range: number) => {
                     return null;
                 });
 
-            await registerPokemon(pokemonData.id, pokemon.name, pokemonData.types);
+            await registerPokemon(pokemonData.id, pokemon.name, pokemonData.types, pokemonData.sprites.other["official-artwork"].front_default);
 
         } catch (error) {
             console.log(`Error adding ${pokemon.name} to database:\n${error}`);

@@ -18,10 +18,12 @@ export default function App() {
             <Meta />
             <Links />
         </head>
-        <body className="bg-stone-950 text-stone-300 overflow-hidden font-outfit flex flex-col h-screen">
+        <body className="bg-stone-950 text-stone-300 font-outfit flex flex-col min-h-screen">
             <NavBar />
             
             <Outlet />
+
+            <footer className="my-2 text-sm text-stone-800 text-center">This is a footer. I don't know why I put it here, so neither will you. Website made with love 💕 ft. PokeAPI (real). All rights reserved???</footer>
             
             <Scripts />
         </body>
